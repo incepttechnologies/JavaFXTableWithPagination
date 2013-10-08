@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="javafxtablewithpagination.TableViewController">
+  <children>
+    <TableView fx:id="personView" layoutX="164.0" layoutY="38.0" prefHeight="150.0" prefWidth="225.0">
+      <columns>
+        <TableColumn prefWidth="75.0" resizable="true" fx:id="personViewIdCol" />
+        <TableColumn prefWidth="75.0" resizable="true" text="Name" fx:id="personViewNameCol" />
+        <TableColumn prefWidth="75.0" resizable="true" text="Age" fx:id="personViewAgeCol" />
+      </columns>
+    </TableView>
+    <HBox layoutX="131.0" layoutY="283.0" prefHeight="64.0" prefWidth="306.0" />
+    <HBox layoutX="97.0" layoutY="212.0" prefHeight="34.0" prefWidth="390.0">
+      <children>
+        <Label text="ID" />
+        <TextField prefWidth="67.0" fx:id="idTxt"/>
+        <Label prefWidth="42.0" text="Name" />
+        <TextField prefWidth="80.0"  fx:id="nameTxt" />
+        <Label text="Age" />
+        <TextField prefWidth="73.0"  fx:id="ageTxt"/>
+        <Button  fx:id="save" mnemonicParsing="false" text="Add" textFill="#0052cc" textOverrun="CLIP" />
+      </children>
+    </HBox>
+    <Pagination fx:id="pagination" layoutX="133.0" layoutY="242.0" prefHeight="65.0" prefWidth="306.0" />
+  </children>
+</AnchorPane>
